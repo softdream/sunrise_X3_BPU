@@ -35,7 +35,7 @@ ADD_EXECUTABLE( body_detect ${src_file} )
 
 TARGET_LINK_LIBRARIES( body_detect ${OpenCV_LIBS} )
 
-TARGET_LINK_LIBRARIES( body_detect libdnn_test.so )
+TARGET_LINK_LIBRARIES( body_detect libdnn_node.so )
 
 TARGET_LINK_LIBRARIES( body_detect 
 	alog

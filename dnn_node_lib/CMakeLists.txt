@@ -1,6 +1,6 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.16.1)
 
-PROJECT(dnn_test)
+PROJECT(dnn_node)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
