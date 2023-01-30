@@ -50,7 +50,7 @@ protected:
 	int PostProcess( const std::shared_ptr<DnnNodeOutput>&  output ) override;
 
 private:
-	std::string model_file_name_ = "/home/sunrise/workstation/dnn_body_detect/model/multitask_body_head_face_hand_kps_960x544.hbm";
+	std::string model_file_name_ = "/home/sunrise/workstation/sunrise_bpu/dnn_body_detect/model/multitask_body_head_face_hand_kps_960x544.hbm";
 	std::string model_name_ = "multitask_body_head_face_hand_kps_960x544";
 	ModelTaskType model_task_type_ = ModelTaskType::ModelInferType;
 

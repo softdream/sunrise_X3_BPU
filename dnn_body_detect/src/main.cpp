@@ -6,7 +6,7 @@ int main()
 
 	body_detect::BodyDetection detect;
 
-	cv::Mat image = cv::imread("/home/sunrise/workstation/dnn_body_detect/test_data/1.jpg");
+	cv::Mat image = cv::imread("/home/sunrise/workstation/sunrise_bpu/dnn_body_detect/test_data/1.jpg");
 
 	cv::resize( image, image, cv::Size( 960, 544 ) );
 
@@ -18,6 +18,8 @@ int main()
 	detect.displayResults( image );
 	cv::imshow( "ret", image );
 	cv::waitKey(0);
+
+	cv::imwrite("1_ret.jpg", image);
 
 	return 0;
 }
